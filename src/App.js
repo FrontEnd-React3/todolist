@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import './App.css';
 import Header from './components/header';
 import Form from './components/Form';
@@ -16,9 +15,9 @@ function App() {
           <Header />
         </div>
         <div>
-          <Form input={input} setInput={setInput} todos={todos} setTodos={setTodos} />
+          <Form input={input} setInput={setInput} todos={todos} setTodos={setTodos} editTodos={editTodo} setEditTodos={setEditTodo} />
         </div>
-        <TodosList todos={todos} setTodos={setTodos}/>
+        <TodosList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />
 
       </div>
     </div>
